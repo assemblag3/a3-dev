@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+	<head>
+		<title>news post (window decorator) prototype</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<meta name="generator" content="Geany 0.20" />
+		<link rel="stylesheet" href="windowdecoration.css" type="text/css" />
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		
+		<!-- START JQUERY HERE -->
+		
+		<script type="text/javscript">
+		
+		$(document).ready(function(){
+		
+			$('.topbar').click(function() {
+				$('.thecontent').next().toggle('fast');
+			});
+		
+		})
+		
+		</script>
+		
+		<!-- END JQUERY -->
+		
+	</head>
+
+	<body>
+	
+		<div id="testcontainer">
+			
+			<div class="postcontainer">
+				<div class="topbar"><span>This is a test article.</span></div>
+				<div class="contentcontainer">
+					<div class="thecontent">
+						test<br />
+						test<br />
+						test<br />
+						test<br />
+						test<br />
+						test<br />
+					</div>
+					<div class="spacer"></div>
+				</div>
+				<div class="bottombar">
+					<img src="images/a3-bottombar.gif" alt="botbar" />
+				</div>
+			</div>
+			
+			<div class="postcontainer">
+				<div class="topbar"><span>This is a test article.</span></div>
+				<div class="contentcontainer">
+					<div class="thecontent">
+						test<br />
+						test<br />
+						test<br />
+						test<br />
+						test<br />
+						test<br />
+					</div>
+					<div class="spacer"></div>
+				</div>
+				<div class="bottombar">
+					<img src="images/a3-bottombar.gif" alt="botbar" />
+				</div>
+			</div>
+			
+		</div>
+	
+	</body>
+
+</html>

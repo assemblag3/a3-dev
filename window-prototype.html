@@ -8,19 +8,23 @@
 		<meta name="generator" content="Geany 0.20" />
 		<link rel="stylesheet" href="windowdecoration.css" type="text/css" />
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+		
+		<!-- Jquery (Remote CDN, then local fallback) -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script>!window.jQuery && document.write('<script src="/path/to/local/jQuery.js"><\/script>');</script>​
 		
 		<!-- START JQUERY HERE -->
 		
 		<script type="text/javscript">
 		
 		$(document).ready(function(){
-		
-			$('.topbar').click(function() {
-				$('.thecontent').next().toggle('fast');
+			
+			$(".minbutton").click(function() {
+				alert("Button clicked");
+				$(this).closest(".contentcontainer").next(".thecontent").toggle()
 			});
 		
-		})
+		});
 		
 		</script>
 		
@@ -33,7 +37,10 @@
 		<div id="testcontainer">
 			
 			<div class="postcontainer">
-				<div class="topbar"><span>This is a test article.</span></div>
+				<div class="topbar">
+					<span>This is a test article.</span>
+					<img class="minbutton" src="images/a3-minbutton.gif" alt="minbutton" />
+				</div>
 				<div class="contentcontainer">
 					<div class="thecontent">
 						test<br />
@@ -51,7 +58,9 @@
 			</div>
 			
 			<div class="postcontainer">
-				<div class="topbar"><span>This is a test article.</span></div>
+				<div class="topbar">
+					<span>This is a test article.</span>
+					<img class="minbutton" src="images/a3-minbutton.gif" alt="minbutton" />
 				<div class="contentcontainer">
 					<div class="thecontent">
 						test<br />

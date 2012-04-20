@@ -10,21 +10,20 @@
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 		
 		<!-- Jquery (Remote CDN, then local fallback) -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script>!window.jQuery && document.write('<script src="/path/to/local/jQuery.js"><\/script>');</script>​
 		
 		<!-- START JQUERY HERE -->
 		
-		<script type="text/javscript">
+		<script type="text/javascript">
 		
-		$(document).ready(function(){
+		$(window).ready(function(){
 			
 			$(".minbutton").click(function() {
-				alert("Button clicked");
-				$(this).closest(".contentcontainer").next(".thecontent").toggle()
-			});
+				$(this).closest(".topbar").next(".contentcontainer").children(".thecontent").toggle('fast');
+			})
 		
-		});
+		})
 		
 		</script>
 		
@@ -35,6 +34,16 @@
 	<body>
 	
 		<div id="testcontainer">
+			
+			<div id="hintcontainer">
+				<div id="hintheader">Helpful Hint:<img src="images/a3-hintclose.gif" alt="close hint " /></div>
+				<div id="hintbody">You can click the button located on the upper right of each post to collapse them, making it easier to navigate pages full of posts.</div>
+				<div id="hintbottom">
+					<form>
+						Don't show again: <input type="checkbox" name="hintremember" value="yes" checked="yes" />
+					</form>
+				</div>
+			</div>
 			
 			<div class="postcontainer">
 				<div class="topbar">
@@ -61,6 +70,7 @@
 				<div class="topbar">
 					<span>This is a test article.</span>
 					<img class="minbutton" src="images/a3-minbutton.gif" alt="minbutton" />
+				</div>
 				<div class="contentcontainer">
 					<div class="thecontent">
 						test<br />

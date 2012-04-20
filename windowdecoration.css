@@ -81,3 +81,51 @@ body {
 	width: 742px;
 }
 
+#hintcontainer {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: x-small;
+	width: 742px;
+	border: 1px solid black;
+	color: white;
+	margin: 0 auto;
+	margin-bottom: 15px;
+	background-image: url("images/a3-hintarrow.gif");
+	background-repeat: no-repeat;
+	background-position: right bottom;
+	background-color: #526997;
+}
+
+#hintheader {
+	padding-top: 5px;
+	font-size: small;
+	font-weight: bold;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+#hintheader img {
+	float: right;
+	padding-right: 5px;
+}
+	
+#hintbody {
+	font-size: x-small;
+	font-weight: regular;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#hintbottom {
+	padding-left: 5px;
+	padding-bottom: 5px;
+}
+
+#hintbottom img {
+	margin-right: 10px;
+	float: right;
+}
+
+#hintclear {
+	width: 100%;
+	clear: both;
+}

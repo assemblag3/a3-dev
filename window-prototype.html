@@ -21,6 +21,10 @@
 			
 			$(".minbutton").click(function() {
 				$(this).closest(".topbar").next(".contentcontainer").children(".thecontent").toggle('fast');
+			});
+			
+			$(".closehint").click(function() {
+				$(this).closest("#hintcontainer").fadeOut('fast');
 			})
 		
 		})
@@ -36,7 +40,7 @@
 		<div id="testcontainer">
 			
 			<div id="hintcontainer">
-				<div id="hintheader">Helpful Hint:<img src="images/a3-hintclose.gif" alt="close hint " /></div>
+				<div id="hintheader">Helpful Hint:<img class="closehint" src="images/a3-hintclose.gif" alt="close hint " /></div>
 				<div id="hintbody">You can click the button located on the upper right of each post to collapse them, making it easier to navigate pages full of posts.</div>
 				<div id="hintbottom">
 					<form>
